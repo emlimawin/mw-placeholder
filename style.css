@@ -1,0 +1,89 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+* {
+    margin: 0;
+  }
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-family: 'MuseoModerno', sans-serif;
+    background-color: rgb(225, 205, 243);
+}
+
+wrapper {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    padding-top: 1.5em;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-align: center;
+    color: rgb(33, 33, 33);
+}
+
+img {
+    width:100%;
+}
+
+/* Responsive Design--------------------------------------------------------------*/
+
+@media only screen and (orientation: landscape) {
+
+    wrapper {
+        width: 20%;
+    }
+}
+
+/* TABLETS and smaler Screens */
+
+@media only screen and (orientation: portrait) 
+                    and (min-width: 760px) {
+    
+    wrapper {
+        width: 30%;
+    }
+
+    p {
+        font-size: 1.7em;
+    }
+}
+
+@media only screen and (orientation: landscape) and (min-height: 760px) {
+
+    wrapper {
+        width: 20%;
+    }
+
+    p {
+        font-size: 1.7em;
+    }
+}
+
+/* Desktop Screen Medium and Large */
+
+@media only screen and (orientation: landscape) and (min-width: 1900px) {
+    
+    wrapper {
+        max-width: 400px;
+    }
+
+    p {
+        font-size: 2em;
+    }
+}
